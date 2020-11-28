@@ -1,13 +1,15 @@
 html {
     font-size: 62.5%;
     /* height: 100vh; */
+    scroll-behavior: smooth;
 }
 
 body {
     font: 1.5rem/1.5 Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: ; */
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 /* Global */
@@ -52,6 +54,7 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.6rem;
+    font-weight: lighter;
     padding: 1rem 2rem 1rem 2rem;
     transition: 0.5s ease;
 }
@@ -83,8 +86,16 @@ header a:hover {
     /* font-weight: bold; */
 }
 
+.current a {
+    border: 3px solid #35424a;
+    /* border-radius: 0.2rem; */
+    padding: 0.7rem 2rem;
+    margin: 0 1rem;
+}
+
 /* Showcase */
 #showcase {
+    font-family: Montserrat;
     min-height: calc(88vh - 0.3rem);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/elearning_pic2.jpg') no-repeat;
     background-size: cover;
@@ -101,35 +112,35 @@ header a:hover {
 #showcase p {
     line-height: 1.5;
     font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
     width: 75%;
+    /* font-style: oblique; */
     margin: 0 auto 4rem auto;
 }
 
 .trans-btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
     display: inline-block;
-    font-size: 2rem;
+    /* font-size: 1.7rem; */
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
+    color: #35424a;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid white;
     padding: 1rem 3rem;
     margin-bottom: 2rem;
     transition: 00.5s ease;
 }
 
 .trans-btn:hover {
-    background-color: white;
-    color: #35424a;
-}
-
-footer {
-    padding: 2rem;
-    margin-top: 2rem;
+    background-color: transparent;
     color: white;
-    background-color: #35424a;
-    text-align: center;
 }
 
 .arrow {
@@ -143,4 +154,144 @@ footer {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+/* Section Header */
+#section-header {
+    font-family: Montserrat;
+    background: white;
+    margin-bottom: 4rem;
+}
+
+.section-header-text {
+    text-align: center; 
+    color: #35424a;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.section-header-heading {
+    margin-bottom: 0; 
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* border-bottom: 2px solid #35424a; */
+    letter-spacing: 0.5rem;
+}
+
+.section-header-tagline {
+    margin-top: 0;
+}
+
+/* Boxes */
+#boxes {
+    background: white;
+    margin-top: 2rem;
+}
+
+#boxes .box {
+    float: left;
+    width: 40%;
+    min-height: 50rem;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/Engg.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 0.2rem;
+    display: table;
+    margin: 4% 4%;
+    transition: 00.5s ease;
+}
+
+#boxes .box:hover {
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Engg.jpg') no-repeat;;
+    background-size: cover;
+}
+
+#boxes .box-2 {
+    float: left;
+    width: 40%;
+    min-height: 50rem;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/medical.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 0.2rem;
+    display: table;
+    margin: 4% 4%;
+    transition: 00.5s ease;
+}
+
+#boxes .box-2:hover {
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/medical.jpg') no-repeat;;
+    background-size: cover;
+}
+
+#boxes .box-3 {
+    float: left;
+    width: 40%;
+    min-height: 50rem;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/mgmt.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 0.2rem;
+    display: table;
+    margin: 4% 4%;
+    transition: 00.5s ease;
+}
+
+#boxes .box-3:hover {
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/mgmt.jpg') no-repeat;;
+    background-size: cover;
+}
+
+#boxes .box-4 {
+    float: left;
+    width: 40%;
+    min-height: 50rem;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/literature.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 0.2rem;
+    display: table;
+    margin: 4% 4%;
+    transition: 00.5s ease;
+}
+
+#boxes .box-4:hover {
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/literature.jpg') no-repeat;;
+    background-size: cover;
+}
+
+.center-in-box {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-para {
+    line-height: 2.5; 
+    letter-spacing: 0.3rem;
+    padding: 2rem; 
+    font-size: large; 
+    border: 2.5px solid white;
+    border-radius: 0.2rem;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: #35424a;
+    text-align: center;
 }
